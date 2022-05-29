@@ -26,5 +26,14 @@ fn main() {
         c += 1;
     }
 
+    let f0 = v1.iter().filter(|&n| *n == "0").count();
+    let f1 = v1.iter().filter(|&n| *n == "1").count();
+
+    if f0 > f1 {
+        v2.push(0);
+    } else {
+        v2.push(1);
+    }
+
     println!("{:?}", v2);
 }
