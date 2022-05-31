@@ -1,3 +1,6 @@
+// Considering that 010100010100 and 101011101011 are the two binary criteria
+// results, ill based the code on this
+
 use std::fs;
 
 fn main() {
