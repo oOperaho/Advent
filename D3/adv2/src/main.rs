@@ -27,7 +27,7 @@ fn main() {
                 if k.starts_with("0") {
                     let pos: usize = v.iter().position(|x| *&x == k).unwrap();
 
-                    v.remove(pos);
+                    v.remove(pos); // wait for it
                 }
             }
         } else {
@@ -43,5 +43,5 @@ fn main() {
         c += 1;
     }
 
-    //println!("{:?}", v);
+    println!("{:?}", v);
 }
