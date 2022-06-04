@@ -16,17 +16,17 @@ while len(f) > 1:
 
 	if l0 > l1:
 		for j in f:
-			if j[c] == "1":
+			if j[c] == "1": # Change this to find the other binary
 				out.append(j)
 		f = out[:]
 	if l1 > l0:
 		for j in f:
-			if j[c] == "0":
+			if j[c] == "0": # Change this to find the other binary
 				out.append(j)
 		f = out[:]
 	if l0 == l1:
 		for j in f:
-			if j[c] == "0":
+			if j[c] == "0": # Change this to find the other binary
 				out.append(j)
 		f = out[:]
 
