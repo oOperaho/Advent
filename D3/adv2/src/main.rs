@@ -27,7 +27,7 @@ fn main() {
                 if k.starts_with("0") {
                     let pos: usize = v.iter().position(|x| *&x == k).unwrap();
 
-                    v.remove(pos); // wait for it
+                    v.remove(pos);
                 }
             }
         } else {
@@ -35,7 +35,7 @@ fn main() {
                 if k.starts_with("1") {
                     let pos: usize = v.iter().position(|x| *&x == k).unwrap();
 
-                    v.remove(pos); // wait for it
+                    v.remove(pos);
                 }
             }
         }
