@@ -24,16 +24,16 @@ fn main() {
 
         if f0 >= f1 { // change the order of the operator to get the other count
             for k in &v {
-                if k.starts_with("0") {
-                    let pos: usize = v.iter().position(|x| *&x == k).unwrap();
+                if k[c] == "0" {
+                    let pos: usize = v.iter().position(|x| *x == k).unwrap();
 
                     v.remove(pos);
                 }
             }
         } else {
             for k in &v {
-                if k.starts_with("1") {
-                    let pos: usize = v.iter().position(|x| *&x == k).unwrap();
+                if k[c] == "1" {
+                    let pos: usize = v.iter().position(|x| *x == k).unwrap();
 
                     v.remove(pos);
                 }
