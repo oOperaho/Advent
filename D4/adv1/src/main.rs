@@ -6,9 +6,7 @@ fn main() {
     let mut v = Vec::new();
 
     for i in bingo.lines() {
-        if i != "" {
-            v.push(i)
-        }
+        v.push([i])
     }
 
     println!("{:?}", v);
