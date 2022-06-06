@@ -13,5 +13,14 @@ fn main() {
         }
     }
 
-    println!("{:?}", v);
+    for x in &v {
+        for y in x {
+            println!("{}", y);
+            if y == &inst[c] {
+                println!("test");
+            }
+        }
+    }
+
+    //println!("{:?}", v);
 }
