@@ -14,12 +14,7 @@ fn main() {
     }
 
     for x in &v {
-        for y in x {
-            println!("{}", y);
-            if y == &inst[c] {
-                println!("test");
-            }
-        }
+        // snip
     }
 
     //println!("{:?}", v);
