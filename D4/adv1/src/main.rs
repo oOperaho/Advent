@@ -14,8 +14,8 @@ fn main() {
     }
 
     for x in &v {
-        // snip
+        println!("{:?}", x);
     }
 
-    //println!("{:?}", v);
+    // println!("{:?}", v);
 }
