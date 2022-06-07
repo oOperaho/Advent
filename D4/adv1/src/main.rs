@@ -14,7 +14,11 @@ fn main() {
     }
 
     for x in &v {
-        println!("{:?}", x);
+        for y in x {
+            y = y.replace(inst[c], "");
+        }
+
+        c += 1;
     }
 
     // println!("{:?}", v);
