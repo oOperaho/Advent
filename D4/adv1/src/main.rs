@@ -22,7 +22,9 @@ fn main() {
         }
     }
 
-    
+    for x in &v1 {
+        // snip
+    }
 
     println!("{:?}", v1);
 }
