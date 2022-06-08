@@ -6,7 +6,7 @@ fn main() {
     let inst: Vec<&str> = f.split(",").collect();
     let mut v0 = Vec::new();
     let mut v1 = Vec::new();
-    let mut c0 = 0;
+    let (mut c0, mut c1, mut c2): (usize, usize, usize) = (0, 0, 0);
 
     for i in bingo.lines() {
         if i != "" {
@@ -23,8 +23,25 @@ fn main() {
     }
 
     for x in &v1 {
-        // snip
+        loop {
+            if c1 == 4 {
+                break 'second;
+            }
+
+            if c2 == 100 {
+                c2 = 0;
+                c1 += 1;
+            }
+
+            let y = x[c1].trim();
+
+            if y.contains(inst[c2]) {
+                println!("{}", inst[c2]);
+            }
+
+            c2 += 1;
+        }
     }
 
-    println!("{:?}", v1);
+    // println!("{:?}", v1);
 }
