@@ -23,19 +23,7 @@ fn main() {
     }
 
     for x in &v1 {
-        if c1 == 5 {
-            c1 = 0;
-        }
-
-        let y = x[c1].trim();
-        println!("{}", y);
-
-        if y.contains(inst[c2]) {
-            println!("{}", inst[c2]);
-        }
-
-        c1 += 1;
-        c2 += 1;
+        // snip
     }
 
     // println!("{:?}", v1;
