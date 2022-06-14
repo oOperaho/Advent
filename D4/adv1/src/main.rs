@@ -23,8 +23,8 @@ fn main() {
     }
 
     for x in &v1 {
-        // snip
+        println!("{:?}", x);
     }
 
-    // println!("{:?}", v1;
+    println!("{:?}", v1);
 }
