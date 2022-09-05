@@ -9,6 +9,10 @@ for i in bingo:
 
 
 for j in range(0, len(l)):
-	
-	
+	if j == c0:
+		slc = l[c0:c0+5]
+		fnl.append(slc)
+
 	c0 = c0 + 5
+
+print(fnl)
