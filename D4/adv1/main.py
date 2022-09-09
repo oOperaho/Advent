@@ -1,7 +1,7 @@
 f0 = open("/home/operaho/Code/Advent/D4/adv.txt", "r")
 f1 = open("/home/operaho/Code/Advent/D4/instructions.txt", "r")
 
-bingo, inst, l, fnl, c0 = f0.read().splitlines(), f1.read(), [], [], 0
+bingo, inst, l, fnl, lin, c0 = f0.read().splitlines(), f1.read().splitlines(), [], [], [], 0
 
 for i in bingo:
 	if i != '':
@@ -16,3 +16,6 @@ for j in range(0, len(l)):
 
 for x in fnl:
 	print(x)
+
+for y in inst:
+	print(y)
