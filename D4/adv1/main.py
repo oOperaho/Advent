@@ -20,6 +20,4 @@ for x in fnl:
 for y in inst:
 	print(y)
 
-print(lin)
-
 # snip
