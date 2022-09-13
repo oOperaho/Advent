@@ -18,6 +18,4 @@ for x in fnl:
 	print(x)
 
 for y in inst:
-	print(y)
-
-# snip
+	# rint(y)
